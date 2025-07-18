@@ -1,161 +1,181 @@
-# 🤖 **JarvisOS**
+## 🤖 **JarvisOS**
 
-*The open-source, multimodal, emotionally intelligent AI Operating System.*
+**The open-source, multimodal, emotionally intelligent, *agentic* AI Operating System.**
 
-An **Hugging Face-powered**, **voice-enabled**, **plugin-based** AI OS — built by [**Priyanshu Mishra**](#) to rival the best. JarvisOS aims to become the *most powerful AI assistant on Earth.*
+A **Hugging Face–powered**, voice-enabled, plugin-based, *goal-driven autonomous agent OS* — built by **Priyanshu Mishra** to rival the best.
+JarvisOS isn’t just an assistant — it’s your personal co-pilot: it *listens*, *plans*, *reasons*, *acts*, *remembers*, and *evolves* — all on your command.
 
 ---
 
 ## 🌟 **Project Vision**
 
-JarvisOS isn’t just another assistant — it’s a **modular**, **future-ready**, **multimodal** AI OS that **listens, remembers, evolves**, and genuinely **understands you**.
+JarvisOS isn’t just another chatbot — it’s a *benchmark* in open-source agentic AI.
+A modular, future-ready, multimodal *Autonomous AI OS* that:
 
-* 🧠 **Deep memory**
-* 🎙️ **Voice understanding**
-* 💬 **Emotional intelligence**
-* ⚙️ **Real-world utility**
+* 🧠 *Thinks*: Plans tasks with a ReAct-style loop
+* 🗂️ *Chooses Tools*: Selects the right plugins dynamically
+* ⚡ *Acts*: Executes tasks autonomously
+* 🧾 *Remembers*: Logs every goal, step, and outcome
+* 💙 *Understands*: Tracks my mood and adapts
 
-**We don’t build MVPs. We build benchmarks.**
+> **I don’t build MVPs. I build benchmarks.**
 
 ---
 
-## 🧩 **Core Features**
+## 🧩 **Core Capabilities**
 
-| **Category**          | **Description**                                                      |
-| --------------------- | -------------------------------------------------------------------- |
-| 🎙️ **Voice I/O**     | *Whisper* for speech-to-text, *Bark* or *pyttsx3* for text-to-speech |
-| 🧠 **LLM Core**       | Hugging Face models — *Flan-T5, Zephyr, Mistral*, etc.               |
-| 🧩 **Plugin Engine**  | Easily add/remove skills as Python modules                           |
-| 📚 **Memory Engine**  | Long-term memory with *LangChain* + *FAISS/JSON*                     |
-| ⚙️ **Modular Core**   | Drop-in plugins with YAML config                                     |
-| 🧪 **Tested System**  | *PyTest*-driven plugin and core testing                              |
-| 📊 **MLOps**          | *MLflow* for logging + *ZenML* for pipelines                         |
-| 📈 **DevOps Ready**   | Docker, GitHub Actions, Loguru                                       |
-| 👁️ **Multimodal AI** | BLIP for vision, TrOCR for OCR, webcam with OpenCV                   |
-| ☁️ **Deployable**     | Hugging Face Spaces, Streamlit Cloud, Docker containers              |
-| 📱 **Mobile-Ready**   | *FastAPI* REST API for mobile or browser                             |
-| 💬 **Emotional AI**   | Tracks mood, daily check-ins, empathetic replies                     |
-| 👥 **Multi-user**     | Separate profiles, personal memories and settings                    |
-| 🔐 **Secure Access**  | Optional voice ID login + JWT auth                                   |
-| 📲 **Dashboard**      | Streamlit UI for logs, mood graph, plugin toggles                    |
+| Category           | Description                                              |
+| ------------------ | -------------------------------------------------------- |
+| 🎙️ Voice I/O      | Whisper for speech-to-text, Bark/pyttsx3 for natural TTS |
+| 🧠 LLM Core        | Hugging Face models — Flan-T5, Zephyr, Mistral           |
+| 🧩 Plugin Engine   | Drop-in Python skills, now exposed as agent tools        |
+| 🧠 Agentic Planner | 🔥 New: ReAct-style autonomous reasoning & task loop     |
+| 🗂️ Tool Registry  | 🔥 New: Plugins registered as dynamic callable tools     |
+| 📚 Memory Engine   | Episodic & long-term memory with LangChain + FAISS       |
+| 💬 Emotional AI    | Daily mood logs, empathy-driven actions                  |
+| 🧪 Tested System   | PyTest-driven core + plugin + agent loop tests           |
+| 📊 MLOps           | MLflow for tracking, ZenML for pipelines                 |
+| ⚙️ DevOps Ready    | Docker, GitHub Actions, secure sandboxing                |
+| 👁️ Multimodal AI  | BLIP for vision, TrOCR for OCR, webcam                   |
+| ☁️ Deployable      | FastAPI backend, Streamlit dashboard, Dockerized         |
+| 📱 Mobile-Ready    | REST API for mobile apps & remote commands               |
+
+---
+
+## 🔥 **Agent Mode: How It Works**
+
+1️⃣ **Goal → Plan → Action Loop**
+JarvisOS listens to my *goal* → plans sub-tasks → chooses plugins → executes autonomously → checks results → loops until done.
+
+2️⃣ **Tools as Plugins**
+Every plugin is a registered *tool* — searchable & callable by the agent in real time.
+
+3️⃣ **Episodic Memory**
+Each task’s context, steps, and results are logged — so JarvisOS *learns* and *improves*.
+
+4️⃣ **Sandboxed & Safe**
+Task loops run inside a controlled environment — logging every action with no infinite loops.
 
 ---
 
 ## 🔌 **Plugins in JarvisOS v1**
 
-| **Plugin**             | **Functionality**                                 |
-| ---------------------- | ------------------------------------------------- |
-| 📄 **Summarizer**      | Summarizes long text using HF models              |
-| 🌐 **Translator**      | Translates any text (e.g., Hindi ↔ English)       |
-| 🔍 **Search**          | Smart web search with clean answers               |
-| ⏰ **Reminder**         | Schedule voice-based reminders                    |
-| 🌦️ **Weather**        | Real-time weather info via API                    |
-| 🖥️ **System Control** | Open apps, control volume, media, browser         |
-| 🔎 **OCR Reader**      | Extracts text from images/webcam (OpenCV + TrOCR) |
-| 🖼️ **Image Caption**  | Describes images (via BLIP)                       |
-| 📧 **Email**           | Reads/sends emails (setup required)               |
-| 📆 **Daily Check**     | Checks on you and logs emotional state            |
-| 🧠 **Recall Memory**   | *“What did we talk about yesterday?”*             |
-| 🎵 **Music Player**    | Mood-based music suggestions                      |
-| 👤 **Profile Switch**  | Switch between user profiles                      |
+| Plugin             | Functionality                     |
+| ------------------ | --------------------------------- |
+| 📄 Summarizer      | Summarizes long text              |
+| 🌐 Translator      | Translates text (Hindi ↔ English) |
+| 🔍 Search          | Smart web search                  |
+| ⏰ Reminder         | Voice-based reminders             |
+| 🌦️ Weather        | Real-time weather                 |
+| 🖥️ System Control | Open apps, control media          |
+| 🔎 OCR Reader      | Extract text from images          |
+| 🖼️ Image Caption  | Describe images                   |
+| 📧 Email           | Read/send emails                  |
+| 📆 Daily Check     | Mood check-in                     |
+| 🧠 Recall Memory   | “What did I say yesterday?”       |
+| 🎵 Music Player    | Mood-based music                  |
+| 👤 Profile Switch  | Multi-user profiles               |
 
 ---
 
 ## 🧠 **Emotional Intelligence Engine**
 
-| **Feature**                  | **Description**                            |
-| ---------------------------- | ------------------------------------------ |
-| 🗣️ **Daily Check-In**       | *“How was your day?”* — logs mood/emotions |
-| 🧩 **Emotion Detection**     | Detects sentiment (keywords/HF model)      |
-| 🧾 **Memory Recall**         | *“What did I say about BIT last week?”*    |
-| 📊 **Mood Tracker**          | Mood trends with *Streamlit* graph         |
-| 🎧 **Emotion-Based Actions** | Suggests music, breaks when low            |
-| 🧘 **Reflection Mode**       | *“Want to hear how you felt this week?”*   |
+| Feature                  | Description                   |
+| ------------------------ | ----------------------------- |
+| 🗣️ Daily Check-In       | “How was your day?”           |
+| 🧩 Emotion Detection     | Sentiment analysis            |
+| 🧾 Memory Recall         | “What did I say about exams?” |
+| 📊 Mood Tracker          | Trends & graphs               |
+| 🎧 Emotion-Based Actions | Suggests music, breaks        |
+| 🧘 Reflection Mode       | Weekly emotional summary      |
 
 ---
 
-## 🔧 **MLOps + DevOps Integration**
+## ⚙️ **MLOps + DevOps**
 
-| **Tool**              | **Purpose**                      |
-| --------------------- | -------------------------------- |
-| 🔁 **MLflow**         | Track model + plugin performance |
-| ⚙️ **ZenML**          | Future fine-tuning pipelines     |
-| 🐳 **Docker**         | Containerized deployment         |
-| 🧪 **PyTest**         | Robust testing for plugins/core  |
-| 🔐 **JWT Auth**       | Secure REST API access           |
-| 🚀 **GitHub Actions** | Continuous integration, testing  |
+| Tool              | Purpose                    |
+| ----------------- | -------------------------- |
+| 🔁 MLflow         | Model & plugin tracking    |
+| ⚙️ ZenML          | Fine-tuning pipelines      |
+| 🐳 Docker         | Full containerization      |
+| 🔐 JWT Auth       | Secure API access          |
+| 🚀 GitHub Actions | CI/CD for tests + deploy   |
+| 🧪 PyTest         | Agent loop, plugins tested |
 
 ---
 
 ## 🏗️ **Folder Structure**
 
-```plaintext
+```
 JarvisOS/
-├── main.py          # Central orchestrator
-├── core/            # TTS, STT, memory, emotion modules
-├── plugins/         # Skills (summarizer, translator, OCR, etc.)
-├── mlops/           # MLflow + ZenML logic
-├── multimodal/      # BLIP, TrOCR, OpenCV webcam tools
-├── api/             # FastAPI backend for mobile/web
-├── dashboard/       # Streamlit mood + usage dashboard
-├── config/          # YAML configs, model settings
-├── devops/          # Dockerfile, CI/CD setup
-├── data/            # Memory logs, mood data, stats
+├── main.py          # Orchestrator
+├── core/
+│   ├── memory/      # LangChain, FAISS, logs
+│   ├── emotion/     # Mood tracking
+│   ├── stt_tts/     # Whisper, Bark/pyttsx3
+│   ├── agent/       # 🔥 ReAct loop, planner, executor
+│   ├── tool_registry/ # 🔥 Plugin schemas for agent
+├── plugins/         # Skills = tools
+├── mlops/           # MLflow, ZenML
+├── multimodal/      # BLIP, TrOCR, webcam
+├── api/             # FastAPI backend
+├── dashboard/       # Streamlit mood + logs
+├── config/          # YAML configs
+├── devops/          # Dockerfile, CI/CD
+├── data/            # Episodic memory, mood logs
 ├── tests/           # Unit + integration tests
-└── docs/            # Architecture diagrams, guides
+└── docs/            # Architecture, usage
 ```
 
 ---
 
-## 💬 **Sample Interactions**
+## 💬 **Sample Agent Interactions**
 
-> **You:** *“Jarvis, how was I feeling on Saturday?”*
-> **Jarvis:** *“On Saturday, you mentioned feeling anxious due to exams.”*
+> **Me:** *“Jarvis, research AI agents, summarize the findings, and email me tomorrow.”*
+> **JarvisOS:** *“Goal accepted. I’ll research now, create a summary, and email it to you at 8 AM.”*
 
-> **You:** *“Summarize this article and email it.”*
-> **Jarvis:** *“Done. The summary was sent to your Gmail.”*
+> **Me:** *“How was my mood this week?”*
+> **JarvisOS:** *“Mostly positive, with a bit of anxiety on Wednesday due to your exams.”*
 
-> **You:** *“Continue the story from last week.”*
-> **Jarvis:** *“You left off at the Mandir with someone special…”*
+> **Me:** *“Continue the story from last week.”*
+> **JarvisOS:** *“You left off at the Mandir with someone special… Shall we pick it up from there?”*
 
----
-
-## ⚙️ **Tech Stack**
-
-* **Python**
-* **Hugging Face Transformers**
-* **LangChain**, **FAISS**, **SQLite**, **JSON**
-* **Streamlit**, **FastAPI**
-* **OpenCV**, **BLIP**, **TrOCR**
-* **MLflow**, **ZenML**
-* **Docker**, **GitHub Actions**
+> **Me:** *“Plan my trip to Goa next weekend — flights, hotel, budget.”*
+> **JarvisOS:** *“Okay. I’m searching for flights, comparing prices, and shortlisting hotels. I’ll share recommendations shortly…”*
 
 ---
 
-## 🚀 **Future Roadmap**
+## 🚀 **Deployment**
 
-* ✅ Cross-platform mobile app
-* ✅ Voiceprint login for secure user auth
-* ✅ Plugin marketplace for community-made skills
-* ✅ Real-time co-pilot for daily tasks
+* Runs as a **FastAPI microservice**
+* Voice + dashboard via **Streamlit**
+* Fully **Dockerized**
+* Secured with **JWT**
+* Deployable on **Hugging Face Spaces, Streamlit Cloud, or my own VM**
+* CI/CD pipelines with **GitHub Actions**
 
 ---
 
 ## 👑 **Author**
 
-**Priyanshu Mishra** — *Building the benchmark, not the MVP.*
+**Priyanshu Mishra** — building the *benchmark*, not the MVP.
+
+📌 *I don’t stop at “done” — I ship what others call “impossible.”*
 
 ---
 
 ## 📣 **Get Involved**
 
-💡 **Clone it · Fork it · Build your own Jarvis.**
-⭐ **Star this repo** to join the revolution.
-🔌 **Add new plugins** and expand JarvisOS together.
-💬 **File issues**, suggest features, make PRs.
+💡 Clone it · Fork it · Build your own agent · Submit plugins · Star the repo → join the revolution.
+**JarvisOS — Listen. Think. Act. Remember. Evolve.**
 
-**JarvisOS — Listen. Remember. Evolve.**
-🔥 *The future is open-source.*
+🔥 *The future is open-source, autonomous, and unignorable.*
+
+
+
+
+
+
 
 
 

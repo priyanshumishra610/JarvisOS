@@ -2,7 +2,7 @@
 
 The open-source, multimodal, emotionally intelligent, **agentic AI Operating System**.
 
-A **Hugging Face–powered**, voice-enabled, plugin-based, autonomous agent OS — built by **Priyanshu Mishra** to rival the best. JarvisOS isn’t just an assistant — it’s your **personal co-pilot**: it listens, plans, reasons, acts, remembers, and evolves — all on your command.
+A **Hugging Face–powered**, voice-enabled, plugin-based, goal-driven autonomous agent OS — built by **Priyanshu Mishra** to rival the best. JarvisOS isn’t just an assistant — it’s your **personal co-pilot**: it listens, plans, reasons, acts, remembers, and evolves — all on your command.
 
 ---
 
@@ -16,19 +16,19 @@ JarvisOS isn’t just another chatbot — it’s a **benchmark** for open-source
 * 🧾 **Remembers:** Logs every goal, step, and outcome
 * 💙 **Understands:** Tracks your mood, adapts, and responds
 
-> **“I don’t build MVPs. I build benchmarks.” — Priyanshu Mishra**
+> *“I don’t build MVPs. I build benchmarks.” — Priyanshu Mishra*
 
 ---
 
 ## 🏛️ **JarvisOS System Architecture**
 
-Below is a unique **Mermaid diagram** that maps **how JarvisOS works end to end** — from **voice input** to **agent planning**, **tool execution**, **memory storage**, and **user output** — all sandboxed with **MLOps & DevOps** built in.
+Below is a unique **Mermaid diagram** that maps **how JarvisOS works end to end** — from **voice input** to **agent planning**, **tool execution**, **memory**, **mood engine**, **multimodal vision**, **MLOps**, and **deployment**.
 
 ```mermaid
 flowchart TD
   subgraph User
     A1(🎙️ Voice Input)
-    A2(🧑‍💻 Text Command)
+    A2(💻 Text Command)
   end
 
   subgraph Voice I/O
@@ -133,7 +133,7 @@ flowchart TD
 | 🔥 **ReAct Planner**  | ReAct-style autonomous reasoning loop                    |
 | 🗂️ **Tool Registry** | Dynamic callable tools                                   |
 | 📚 **Memory Engine**  | Episodic & long-term memory (LangChain + FAISS)          |
-| 💬 **Emotional AI**   | Daily mood logs, empathy-driven responses                |
+| **Emotional AI**      | Daily mood logs, empathy-driven responses                |
 | 🧪 **Tested System**  | PyTest for core + plugin + loop tests                    |
 | 📊 **MLOps**          | MLflow for tracking, ZenML for pipelines                 |
 | ⚙️ **DevOps Ready**   | Docker, GitHub Actions, secure JWT                       |
@@ -143,7 +143,23 @@ flowchart TD
 
 ---
 
-## 🔌 **Sample Plugins**
+## 🔥 **Agent Mode: How It Works**
+
+1️⃣ **Goal → Plan → Action Loop**
+JarvisOS listens to your goal → plans sub-tasks → selects plugins → executes autonomously → checks results → loops until done.
+
+2️⃣ **Tools as Plugins**
+Every plugin is a registered tool — searchable & callable by the agent in real time.
+
+3️⃣ **Episodic Memory**
+Each task’s context, steps, and results are logged — so JarvisOS learns and improves.
+
+4️⃣ **Sandboxed & Safe**
+Task loops run inside a controlled environment — logging every action with no infinite loops.
+
+---
+
+## 🔌 **Plugins in JarvisOS v1**
 
 | **Plugin**             | **Functionality**                 |
 | ---------------------- | --------------------------------- |
@@ -151,7 +167,7 @@ flowchart TD
 | 🌐 **Translator**      | Translates text (Hindi ↔ English) |
 | 🔍 **Search**          | Smart web search                  |
 | ⏰ **Reminder**         | Voice-based reminders             |
-| 🌦️ **Weather**        | Real-time weather info            |
+| 🌦️ **Weather**        | Real-time weather                 |
 | 🖥️ **System Control** | Open apps, control media          |
 | 🔎 **OCR Reader**      | Extract text from images          |
 | 🖼️ **Image Caption**  | Describe images                   |
@@ -163,7 +179,7 @@ flowchart TD
 
 ---
 
-## 💙 **Emotional Intelligence Engine**
+## **Emotional Intelligence Engine**
 
 | **Feature**                  | **Description**               |
 | ---------------------------- | ----------------------------- |
@@ -214,7 +230,7 @@ JarvisOS/
 
 ---
 
-## 💬 **Sample Interactions**
+## 💬 **Sample Agent Interactions**
 
 > **Me:** “Jarvis, research AI agents, summarize the findings, and email me tomorrow.”
 > **JarvisOS:** “Goal accepted. I’ll research now, create a summary, and email it to you at 8 AM.”
@@ -248,16 +264,17 @@ JarvisOS/
 
 **Priyanshu Mishra — Building the benchmark, not the MVP.**
 
-> “I don’t stop at *done* — I ship what others call *impossible*.”
+> *“I don’t stop at *done* — I ship what others call *impossible*.”*
 
 ---
 
 ## 📣 **Get Involved**
 
 💡 **Clone it · Fork it · Build your own agent · Submit plugins · Star the repo → Join the revolution.**
-JarvisOS — **Listen. Think. Act. Remember. Evolve.** 🔥
+JarvisOS — **Listen. Think. Act. Remember. Evolve.**
 
-> 🔥 **The future is open-source, autonomous, and unignorable.**
+🔥 **The future is open-source, autonomous, and unignorable.**
+
 
 
 

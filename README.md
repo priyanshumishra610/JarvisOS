@@ -167,7 +167,8 @@ JarvisOS/
 ## 📣 **Get Involved**
 
 💡 Clone it · Fork it · Build your own agent · Submit plugins · Star the repo → join the revolution.
-**JarvisOS — Listen. Think. Act. Remember. Evolve.**
+
+## **JarvisOS — Listen. Think. Act. Remember. Evolve.🔥**
 
 🔥 *The future is open-source, autonomous, and unignorable.*
 

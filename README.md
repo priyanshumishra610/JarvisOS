@@ -233,9 +233,13 @@ JarvisOS/
 ## 🚀 **Deployment**
 
 ✅ Runs as a **FastAPI microservice**
+
 ✅ Voice + dashboard via **Streamlit**
+
 ✅ Fully **Dockerized & secured** with JWT
+
 ✅ Deployable on **Hugging Face Spaces**, Streamlit Cloud, or your own VM
+
 ✅ **CI/CD pipelines** with GitHub Actions
 
 ---
